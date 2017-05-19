@@ -1,8 +1,8 @@
 package studentpackage;
 
-public class UserDefinedException extends Exception {
+public class InvalidSGPA extends Exception {
 	String s1;
-	public UserDefinedException(String s2) {
+	public InvalidSGPA(String s2) {
 		s1 = s2;
 	}
 	@Override

@@ -84,9 +84,9 @@ public class RegisterStudent implements Student {
 		sgpa = (float)semTotal/creditsRegistered;
 		try{
 			if(sgpa > 10){
-				throw new UserDefinedException("Sgpa > 10 error");
+				throw new InvalidSGPA("Sgpa > 10 error");
 			}
-		}catch(UserDefinedException e){
+		}catch(InvalidSGPA e){
 			System.out.println(e);
 			System.exit(0);
 		}
